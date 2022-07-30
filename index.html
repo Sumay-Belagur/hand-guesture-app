@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>Hand Gesture Webapp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Splash&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+    <center>
+      <h1>Hand gesture app <br>
+        &#128073; 🤟 👊 </h1>
+<h2><span class="gesture_emoji">Pointing finger</span><span class="gesture_emoji">spider-man hand</span><span class="gesture_emoji">fist bump</span></h2>
+
+    <p>Take a photo of your hand gesture!</p>
+    
+    <div class="col-md-4 col-sm-12 col-xs-12">
+      <label>Webcam view- </label>
+      <div id="camera" onclick="snap();"></div>
+      <br>
+      <p>Click on the webcam view to take snapshot</p>
+    </div>
+    <div class="col-md-4 col-sm-12 col-xs-12">
+      <label class="prediction">Prediction 1</label>
+      <p class="guesture_class" id="guesture_id"></p>
+      <p class="emoji_class" id="emoji_id"></p>
+    
+      <label class="prediction">Prediction 2</label>
+      <p class="guesture_class" id="guesture_id2"></p>
+      <p class="emoji_class" id="emoji_id2"></p>
+    </div>
+    
+    
+    
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>Snapshot - </label>
+    <div id="result" onclick="check();"></div>
+            <br>
+    <p>Click on the picture to check</p>
+          </div>
+        </center>
+    <script src="main.js"></script>
+  </body>
+  </html>
